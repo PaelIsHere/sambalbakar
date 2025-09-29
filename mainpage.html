@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sambal Bakar</title>
+  <link rel="icon" href="logo sambal bakar.jpg" type="image/x-icon">\
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Sambal Bakar</header>
+  <div class="alamat">Jl. Perum 3 No. 404-505, Bekasi Timur</div>
+
+  <div class="container">
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showPage('Beranda')">🏠 Beranda</a></li>
+          <li><a href="#" onclick="showPage('Menu')">📋 Menu</a></li>
+          <li><a href="#" onclick="showPage('Harga')">💰 Harga</a></li>
+          <li><a href="#" onclick="showPage('Lain')">✨ Lain-lain</a></li>
+          <li><a href="#" onclick="showPage('Kontak')">☎️ Kontak Kami</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="Beranda" class="active">
+        <h2>🔥 Selamat Datang di Sambal Bakar</h2>
+        <img src="https://makansedap.id/upload/42487f8c546e49629c439c214c8f7acb.jpg" alt="Gambar Produk" width="350" style="border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2)">
+        <p>Nikmati sensasi pedas menggigit dengan cita rasa khas Nusantara!  
+        Kami menyajikan berbagai pilihan bakaran dengan sambal andalan.</p>
+      </section>
+
+      <section id="Menu">
+        <h2>📋 Menu Favorit</h2>
+        <div class="menu-list">
+          <p>🍗 Ayam Sambal Bakar</p>
+          <p>🐟 Ikan Bakar Rica</p>
+          <p>🥢 Tahu Tempe Bakar</p>
+          <p>🌶️ Sambal Matah</p>
+        </div>
+      </section>
+
+      <section id="Harga">
+        <h2>💰 Daftar Harga</h2>
+        <div class="menu-list">
+          <p>Ayam Sambal Bakar: <b>Rp 25.000</b></p>
+          <p>Ikan Bakar Rica: <b>Rp 30.000</b></p>
+          <p>Tahu Tempe Bakar: <b>Rp 15.000</b></p>
+          <p>Sambal Matah: <b>Rp 8.000</b></p>
+        </div>
+      </section>
+
+      <section id="Lain">
+        <h2>✨ Promo & Lain-lain</h2>
+        <p><b>Promo Spesial:</b> Beli 2 gratis 1 Es Teh setiap hari Jumat!</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBahwbNgaH9kayWO641G-_QZWbR45dw1y75Q&s" 
+             alt="Foto Es Teh" width="280" style="border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2)">
+      </section>
+
+      <section id="Kontak">
+        <h2>☎️ Kontak Kami</h2>
+        <p>📱 WhatsApp: 08xxxxxxxx</p>
+        <p>📸 Instagram: @sambalbakar</p>
+        <p>📧 Email: sambalbakar@gmail.com</p>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kritik dan Saran</title>
+</head>
+<body>
+  <h1>Kritik dan Saran:</h1>
+
+  <form action="#" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email (opsional):</label>
+    <input type="email" id="email" name="email">
+
+    <center><br><br><label for="pesan">Pesan Anda:</label></center>
+    <textarea id="pesan" name="pesan" rows="5" cols="35" required></textarea>
+
+   <button onclick="tampilkanAlert()">Kirim</button>
+          <script>
+            function tampilkanAlert(){
+                alert("Terima Kasih, Atas Kritik dan Sarannya! Kami Usahakan Yang Terbaik Yah Untuk Kedepannya.");
+            }
+            </script>
+            <button type="reset">Reset</button>
+      </section>
+    </main>
+
+    <div class="form-pesan">
+      <h3>📝 Pesan Sekarang</h3>
+       <form onsubmit="return confirm('Pesanan berhasil dikirim!')">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <label for="hp">No. HP:</label>
+        <input type="text" id="hp" name="hp">
+        <label for="tgl">Tanggal Pesan:</label>
+        <input type="date" id="tgl" name="tgl">
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>Website ini dibuat oleh @pael</footer>
+
+</body>
+</html>

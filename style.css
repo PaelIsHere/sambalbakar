@@ -1,0 +1,187 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7f5;
+    }
+
+    header {
+      background: linear-gradient(90deg, #e74c3c, #d35400);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .alamat {
+      text-align: center;
+      padding: 10px;
+      background: #fdf6e3;
+      font-size: 14px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 18% 62% 20%; /* sidebar 18%, konten utama 62%, form 20% */
+      grid-gap: 10px;
+      padding: 10px;
+    }
+
+    aside {
+      background: #2c2c2c;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    aside nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside nav ul li {
+      margin: 10px 0;
+    }
+
+    aside nav ul li a {
+      text-decoration: none;
+      color: #ecf0f1;
+      display: block;
+      padding: 8px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    aside nav ul li a:hover {
+      background: #e74c3c;
+      color: white;
+    }
+
+    main {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
+    }
+
+    section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease;
+  pointer-events: none; /* biar ga bisa diklik saat sembunyi */
+  padding: 20px;
+}
+
+section.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto; /* aktif kalau sudah tampil */
+}
+
+    .menu-list {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 450px;
+    }
+
+    .menu-list p {
+      background: #ffe6e1;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 8px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .form-pesan {
+      background: #fff5e6;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 14px;
+    }
+
+    .form-pesan h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .form-pesan label {
+      display: block;
+      margin: 6px 0 3px;
+      font-size: 13px;
+    }
+
+    .form-pesan input {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+
+    .form-pesan button {
+      width: 100%;
+      padding: 8px;
+      background: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .form-pesan button:hover {
+      background: #d35400;
+    }
+
+    footer {
+      text-align: center;
+      background: #2c2c2c;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 10px;
+    } 
+    .toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #f44336; /* merah default utk error */
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 30px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+.toast.success {
+  background-color: #4CAF50; /* hijau */
+}
+
+.toast.error {
+  background-color: #f44336; /* merah */
+}
+
